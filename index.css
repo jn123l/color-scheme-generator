@@ -49,20 +49,11 @@ header{
     width: 34.375em;
 }
 
-@media (max-width: 670px){
-    header{
-       flex-direction: column; 
-       align-items: start;
-       gap: 0.75em;
-    }   
-    .menu-container{
-        margin: 0 !important;
-    }
-}
+
 
 input[type="color"]{
     height: 7.636vw;
-    width: 11.09vw;
+    width: 10.5vw;
 }
 
 @media (min-width: 671px){
@@ -133,8 +124,7 @@ main{
 
 @media (max-width: 670px){
     .options-menu{
-        top: 7.5em;
-        left: 0.75em;
+        left: 5.35em;
     }
 }
 
