@@ -37,6 +37,14 @@ h3{
 }
 
 /* Layout */
+@media (min-width: 671px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 h3{
     color: white;
     font-weight: 400;
@@ -59,7 +67,7 @@ input[type="color"]{
 @media (min-width: 671px){
     input[type="color"]{
         height: 6vh;
-        width: 7.5vh;
+        width: 7.75vh;
     }
 }
 
@@ -155,9 +163,15 @@ main{
 @media (max-width: 670px){
     .color-container{
         width: 100%;
+        position: relative;
     }
     .color{
         height: 6.875em;
+    }
+    .color-text{
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
 }
 

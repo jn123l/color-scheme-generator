@@ -8,83 +8,85 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <header class="flex">
-            <input type="color" value="#F55A5A" id="color-picker">
-            <div>
-                <div class="flex menu-container" id="menu-container">
-                    <h3 id="selected-option" data-selected="monochrome">Monochrome</h3>
-                    <img class="menu-icon" id="menu-icon" src="./images/menu-icon.svg">
+        <div class="container">
+            <header class="flex">
+                <input type="color" value="#F55A5A" id="color-picker">
+                <div>
+                    <div class="flex menu-container" id="menu-container">
+                        <h3 id="selected-option" data-selected="monochrome">Monochrome</h3>
+                        <img class="menu-icon" id="menu-icon" src="./images/menu-icon.svg">
+                    </div>
                 </div>
-            </div>
-            <button id="get-color-btn" class="get-color-btn">Get color scheme</button>
-        </header>
-        <main>
-            <div class="color-container">
-                <div class="color" id="color-one" data-color="one">   
+                <button id="get-color-btn" class="get-color-btn">Get color scheme</button>
+            </header>
+            <main>
+                <div class="color-container">
+                    <div class="color" id="color-one" data-color="one">   
+                    </div>
+                    <div class="color-text">
+                        <p data-color="one" id="color-one-name"></p>
+                    </div>
                 </div>
-                <div class="color-text">
-                    <p data-color="one" id="color-one-name"></p>
+                <div class="color-container">
+                    <div class="color" id="color-two" data-color="two">   
+                    </div>
+                    <div class="color-text">
+                        <p data-color="two" id="color-two-name"></p>
+                    </div>
                 </div>
-            </div>
-            <div class="color-container">
-                <div class="color" id="color-two" data-color="two">   
+                <div class="color-container">
+                    <div class="color" id="color-three" data-color="three">   
+                    </div>
+                    <div class="color-text">
+                        <p data-color="three" id="color-three-name"></p>
+                    </div>
                 </div>
-                <div class="color-text">
-                    <p data-color="two" id="color-two-name"></p>
+                <div class="color-container">
+                    <div class="color" id="color-four" data-color="four">   
+                    </div>
+                    <div class="color-text">
+                        <p data-color="four" id="color-four-name"></p>
+                    </div>
                 </div>
-            </div>
-            <div class="color-container">
-                <div class="color" id="color-three" data-color="three">   
+                <div class="color-container">
+                    <div class="color" id="color-five" data-color="five">   
+                    </div>
+                    <div class="color-text">
+                        <p data-color="five" id="color-five-name"></p>
+                    </div>
                 </div>
-                <div class="color-text">
-                    <p data-color="three" id="color-three-name"></p>
+            </main>
+            <div class="options-menu hidden" id="options-menu">
+                <div class="flex single-option" data-option="monochrome">
+                    <h3 data-option="monochrome" class="bold">Monochrome</h3>
+                    <img class="selected-icon" src="./images/selected-icon.svg">
                 </div>
-            </div>
-            <div class="color-container">
-                <div class="color" id="color-four" data-color="four">   
+                <div class="flex single-option" data-option="monochrome-dark">
+                    <h3 data-option="monochrome-dark">Monochrome-dark</h3>
+                    <img class="selected-icon hidden" src="./images/selected-icon.svg">
                 </div>
-                <div class="color-text">
-                    <p data-color="four" id="color-four-name"></p>
+                <div class="flex single-option" data-option="monochrome-light">
+                    <h3 data-option="monochrome-light">Monochrome-light</h3>
+                    <img class="selected-icon hidden" src="./images/selected-icon.svg">
                 </div>
-            </div>
-            <div class="color-container">
-                <div class="color" id="color-five" data-color="five">   
+                <div class="flex single-option" data-option="analogic">
+                    <h3 data-option="analogic">Analogic</h3>
+                    <img class="selected-icon hidden" src="./images/selected-icon.svg">
                 </div>
-                <div class="color-text">
-                    <p data-color="five" id="color-five-name"></p>
+                <div class="flex single-option" data-option="complement">
+                    <h3 data-option="complement">Complement</h3>
+                    <img class="selected-icon hidden" src="./images/selected-icon.svg">
                 </div>
-            </div>
-        </main>
-        <div class="options-menu hidden" id="options-menu">
-            <div class="flex single-option" data-option="monochrome">
-                <h3 data-option="monochrome" class="bold">Monochrome</h3>
-                <img class="selected-icon" src="./images/selected-icon.svg">
-            </div>
-            <div class="flex single-option" data-option="monochrome-dark">
-                <h3 data-option="monochrome-dark">Monochrome-dark</h3>
-                <img class="selected-icon hidden" src="./images/selected-icon.svg">
-            </div>
-            <div class="flex single-option" data-option="monochrome-light">
-                <h3 data-option="monochrome-light">Monochrome-light</h3>
-                <img class="selected-icon hidden" src="./images/selected-icon.svg">
-            </div>
-            <div class="flex single-option" data-option="analogic">
-                <h3 data-option="analogic">Analogic</h3>
-                <img class="selected-icon hidden" src="./images/selected-icon.svg">
-            </div>
-            <div class="flex single-option" data-option="complement">
-                <h3 data-option="complement">Complement</h3>
-                <img class="selected-icon hidden" src="./images/selected-icon.svg">
-            </div>
-            <div class="flex single-option" data-option="analogic-complement">
-                <h3 data-option="analogic-complement">Analogic-complement</h3>
-                <img class="selected-icon hidden" src="./images/selected-icon.svg">
-            </div>
-            <div class="flex single-option" data-option="triad">
-                <h3 data-option="triad">Triad</h3>
-                <img class="selected-icon hidden" src="./images/selected-icon.svg">
-            </div>
-        </div>    
+                <div class="flex single-option" data-option="analogic-complement">
+                    <h3 data-option="analogic-complement">Analogic-complement</h3>
+                    <img class="selected-icon hidden" src="./images/selected-icon.svg">
+                </div>
+                <div class="flex single-option" data-option="triad">
+                    <h3 data-option="triad">Triad</h3>
+                    <img class="selected-icon hidden" src="./images/selected-icon.svg">
+                </div>
+            </div>  
+        </div>  
         <script src="index.js"></script>
     </body>
 </html>
